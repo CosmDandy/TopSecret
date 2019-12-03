@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="FOCA" t="IncludeRecursive">
+        <e p="Analysis" t="Include">
+          <e p="DNSCacheSnooping" t="Include">
+            <e p="DNSCache.cs" t="Include" />
+            <e p="domains.txt" t="Include" />
+            <e p="top500.txt" t="Include" />
+            <e p="Update servers.txt" t="Include" />
+          </e>
+          <e p="FingerPrinting" t="Include">
+            <e p="BannerAnalisys.cs" t="Include" />
+            <e p="DNS.cs" t="Include" />
+            <e p="FingerPrinting.cs" t="Include" />
+            <e p="FingerPrintingEventHandler.cs" t="Include" />
+            <e p="FTP.cs" t="Include" />
+            <e p="HTTP.cs" t="Include" />
+            <e p="SMTP.cs" t="Include" />
+          </e>
+          <e p="HttpMap" t="Include">
+            <e p="Fuzzer.cs" t="Include" />
+            <e p="HttpMap.cs" t="Include" />
+          </e>
+          <e p="OperatingSystemUtils.cs" t="Include" />
+          <e p="Pinger" t="Include">
+            <e p="Pinger.cs" t="Include" />
+          </e>
+          <e p="Technology" t="Include">
+            <e p="TechnologyAnalysis.cs" t="Include" />
+            <e p="TechnologyAnalysisHandler.cs" t="Include" />
+          </e>
+        </e>
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configuration.cs" t="Include" />
+        <e p="Database" t="Include">
+          <e p="Controllers" t="Include">
+            <e p="BaseController.cs" t="Include" />
+            <e p="ComputerDomainController.cs" t="Include" />
+            <e p="ComputerIpsController.cs" t="Include" />
+            <e p="ComputersController.cs" t="Include" />
+            <e p="ConfigurationController.cs" t="Include" />
+            <e p="DomainsController.cs" t="Include" />
+            <e p="FilesController.cs" t="Include" />
+            <e p="HttpMapController.cs" t="Include" />
+            <e p="IpsController.cs" t="Include" />
+            <e p="LimitsController.cs" t="Include" />
+            <e p="PluginsController.cs" t="Include" />
+            <e p="ProjectController.cs" t="Include" />
+            <e p="RelationsController.cs" t="Include" />
+          </e>
+          <e p="Entities" t="Include">
+            <e p="Applications.cs" t="Include" />
+            <e p="BaseItem.cs" t="Include" />
+            <e p="ComputerDomains.cs" t="Include" />
+            <e p="ComputerIPs.cs" t="Include" />
+            <e p="Computers.cs" t="Include" />
+            <e p="Data.cs" t="Include" />
+            <e p="Dates.cs" t="Include" />
+            <e p="Descriptions.cs" t="Include" />
+            <e p="Domains.cs" t="Include" />
+            <e p="Emails.cs" t="Include" />
+            <e p="Ficheros.cs" t="Include" />
+            <e p="History.cs" t="Include" />
+            <e p="HttpMapTypesFiles.cs" t="Include" />
+            <e p="IPs.cs" t="Include" />
+            <e p="Limits.cs" t="Include" />
+            <e p="MetaData.cs" t="Include" />
+            <e p="MetaExtractor.cs" t="Include" />
+            <e p="OldVersions.cs" t="Include" />
+            <e p="Passwords.cs" t="Include" />
+            <e p="Paths.cs" t="Include" />
+            <e p="Printers.cs" t="Include" />
+            <e p="Project.cs" t="Include" />
+            <e p="Relations.cs" t="Include" />
+            <e p="Servers.cs" t="Include" />
+            <e p="Users.cs" t="Include" />
+          </e>
+          <e p="FocaContextDb.cs" t="Include" />
+          <e p="Migrations" t="Include">
+            <e p="201708141321589_Initial.cs" t="Include" />
+            <e p="201708141321589_Initial.Designer.cs" t="Include" />
+            <e p="201708141321589_Initial.resx" t="Include" />
+            <e p="201908230648106_RemoveUnusedBackupSupport.cs" t="Include" />
+            <e p="201908230648106_RemoveUnusedBackupSupport.Designer.cs" t="Include" />
+            <e p="201908230648106_RemoveUnusedBackupSupport.resx" t="Include" />
+            <e p="Configuration.cs" t="Include" />
+          </e>
+        </e>
+        <e p="DNSDictionary" t="Include">
+          <e p="hosts.txt" t="Include" />
+        </e>
+        <e p="DNSEnumeration" t="Include">
+          <e p="DNSDumpsterParser.cs" t="Include" />
+          <e p="DNSUtil.cs" t="Include" />
+          <e p="PanelDNSSearchInformation.cs" t="Include" />
+          <e p="PanelDNSSearchInformation.Designer.cs" t="Include" />
+          <e p="PanelDNSSearchInformation.resx" t="Include" />
+          <e p="PanelEngineBingAPIInformation.cs" t="Include" />
+          <e p="PanelEngineBingAPIInformation.Designer.cs" t="Include" />
+          <e p="PanelEngineBingAPIInformation.resx" t="Include" />
+          <e p="PanelEngineBingWebInformation.cs" t="Include" />
+          <e p="PanelEngineBingWebInformation.Designer.cs" t="Include" />
+          <e p="PanelEngineBingWebInformation.resx" t="Include" />
+          <e p="PanelEngineGoogleAPIInformation.cs" t="Include" />
+          <e p="PanelEngineGoogleAPIInformation.Designer.cs" t="Include" />
+          <e p="PanelEngineGoogleAPIInformation.resx" t="Include" />
+          <e p="PanelEngineGoogleWebInformation.cs" t="Include" />
+          <e p="PanelEngineGoogleWebInformation.Designer.cs" t="Include" />
+          <e p="PanelEngineGoogleWebInformation.resx" t="Include" />
+          <e p="PanelOptions.cs" t="Include" />
+          <e p="PanelOptions.Designer.cs" t="Include" />
+          <e p="PanelOptions.resx" t="Include" />
+          <e p="PanelSearchIPBing.cs" t="Include" />
+          <e p="PanelSearchIPBing.Designer.cs" t="Include" />
+          <e p="PanelSearchIPBing.resx" t="Include" />
+          <e p="PanelTryCommonNames.cs" t="Include" />
+          <e p="PanelTryCommonNames.Designer.cs" t="Include" />
+          <e p="PanelTryCommonNames.resx" t="Include" />
+          <e p="PanelTryTransferZone.cs" t="Include" />
+          <e p="PanelTryTransferZone.Designer.cs" t="Include" />
+          <e p="PanelTryTransferZone.resx" t="Include" />
+          <e p="PanelWebSearcherInformation.cs" t="Include" />
+          <e p="PanelWebSearcherInformation.Designer.cs" t="Include" />
+          <e p="PanelWebSearcherInformation.resx" t="Include" />
+        </e>
+        <e p="FOCA.csproj" t="IncludeRecursive" />
+        <e p="FormAbout.cs" t="Include" />
+        <e p="FormAbout.Designer.cs" t="Include" />
+        <e p="FormAbout.resx" t="Include" />
+        <e p="FormAddAltDNSParser.cs" t="Include" />
+        <e p="FormAddAltDNSParser.Designer.cs" t="Include" />
+        <e p="FormAddAltDNSParser.resx" t="Include" />
+        <e p="FormAddClient.cs" t="Include" />
+        <e p="FormAddClient.Designer.cs" t="Include" />
+        <e p="FormAddClient.resx" t="Include" />
+        <e p="FormAddDomain.cs" t="Include" />
+        <e p="FormAddDomain.Designer.cs" t="Include" />
+        <e p="FormAddDomain.resx" t="Include" />
+        <e p="FormAddIP.cs" t="Include" />
+        <e p="FormAddIP.Designer.cs" t="Include" />
+        <e p="FormAddIP.resx" t="Include" />
+        <e p="FormAddMultipleDomains.cs" t="Include" />
+        <e p="FormAddMultipleDomains.Designer.cs" t="Include" />
+        <e p="FormAddMultipleDomains.resx" t="Include" />
+        <e p="FormAddVariable.cs" t="Include" />
+        <e p="FormAddVariable.Designer.cs" t="Include" />
+        <e p="FormAddVariable.resx" t="Include" />
+        <e p="FormAssignIp.cs" t="Include" />
+        <e p="FormAssignIp.Designer.cs" t="Include" />
+        <e p="FormAssignIp.resx" t="Include" />
+        <e p="FormBackupsFuzzer.cs" t="Include" />
+        <e p="FormBackupsFuzzer.Designer.cs" t="Include" />
+        <e p="FormBackupsFuzzer.resx" t="Include" />
+        <e p="FormDNSPrediction.cs" t="Include" />
+        <e p="FormDNSPrediction.Designer.cs" t="Include" />
+        <e p="FormDNSPrediction.resx" t="Include" />
+        <e p="FormDNSTransferZone.cs" t="Include" />
+        <e p="FormDNSTransferZone.Designer.cs" t="Include" />
+        <e p="FormDNSTransferZone.resx" t="Include" />
+        <e p="FormDocumentsSearch.cs" t="Include" />
+        <e p="FormDocumentsSearch.Designer.cs" t="Include" />
+        <e p="FormDocumentsSearch.resx" t="Include" />
+        <e p="FormLoadSave.cs" t="Include" />
+        <e p="FormLoadSave.Designer.cs" t="Include" />
+        <e p="FormLoadSave.resx" t="Include" />
+        <e p="FormMain.cs" t="Include" />
+        <e p="FormMain.Designer.cs" t="Include" />
+        <e p="FormMain.resx" t="Include" />
+        <e p="FormModifyData.cs" t="Include" />
+        <e p="FormModifyData.Designer.cs" t="Include" />
+        <e p="FormModifyData.resx" t="Include" />
+        <e p="FormOptions.cs" t="Include" />
+        <e p="FormOptions.Designer.cs" t="Include" />
+        <e p="FormOptions.resx" t="Include" />
+        <e p="FormPlugins.cs" t="Include" />
+        <e p="FormPlugins.Designer.cs" t="Include" />
+        <e p="FormPlugins.resx" t="Include" />
+        <e p="FormSelectIPRange.cs" t="Include" />
+        <e p="FormSelectIPRange.Designer.cs" t="Include" />
+        <e p="FormSelectIPRange.resx" t="Include" />
+        <e p="FormSplashFOCA.cs" t="Include" />
+        <e p="FormSplashFOCA.Designer.cs" t="Include" />
+        <e p="FormSplashFOCA.resx" t="Include" />
+        <e p="FormValueNotes.cs" t="Include" />
+        <e p="FormValueNotes.Designer.cs" t="Include" />
+        <e p="FormValueNotes.resx" t="Include" />
+        <e p="GUI" t="Include">
+          <e p="Contextual.cs" t="Include" />
+          <e p="UpdateGUI.cs" t="Include" />
+        </e>
+        <e p="Icons" t="Include">
+          <e p="add.png" t="Include" />
+          <e p="bing.png" t="Include" />
+          <e p="chart_organisation.png" t="Include" />
+          <e p="computer.png" t="Include" />
+          <e p="database_lightning.png" t="Include" />
+          <e p="delete.png" t="Include" />
+          <e p="door_open.png" t="Include" />
+          <e p="drive_network_magnifier.png" t="Include" />
+          <e p="email.png" t="Include" />
+          <e p="fingerprint.png" t="Include" />
+          <e p="folder.png" t="Include" />
+          <e p="group.png" t="Include" />
+          <e p="link.png" t="Include" />
+          <e p="Logo_interfaz.ico" t="Include" />
+          <e p="magnifier.png" t="Include" />
+          <e p="magnifier_stop.png" t="Include" />
+          <e p="network.png" t="Include" />
+          <e p="newlogo.png" t="Include" />
+          <e p="page_white_edit.png" t="Include" />
+          <e p="page_white_find.png" t="Include" />
+          <e p="page_white_go.png" t="Include" />
+          <e p="page_white_go_stop.png" t="Include" />
+          <e p="page_white_link.png" t="Include" />
+          <e p="page_white_stack_go_stop.png" t="Include" />
+          <e p="report.png" t="Include" />
+          <e p="report_add.png" t="Include" />
+          <e p="report_magnify.png" t="Include" />
+          <e p="server.png" t="Include" />
+          <e p="shodan.png" t="Include" />
+          <e p="software-small-icon.png" t="Include" />
+          <e p="tick.png" t="Include" />
+          <e p="user_comment.png" t="Include" />
+          <e p="world_link.png" t="Include" />
+          <e p="world_search.png" t="Include" />
+          <e p="world_search_stop.png" t="Include" />
+        </e>
+        <e p="Logo_interfaz.ico" t="Include" />
+        <e p="ModifiedComponents" t="Include">
+          <e p="CheckedButton.cs" t="Include" />
+          <e p="CookieAwareWebClient.cs" t="Include" />
+          <e p="ListViewColumnSorter.cs" t="Include" />
+          <e p="ListViewColumnSorterValues.cs" t="Include" />
+          <e p="ListViewEx.cs" t="Include" />
+          <e p="ThreadSafeList.cs" t="Include" />
+          <e p="TreeViewNoFickering.cs" t="Include" />
+        </e>
+        <e p="NLog.config" t="Include" />
+        <e p="NLog.xsd" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="PanelDNSSearch.cs" t="Include" />
+        <e p="PanelDNSSearch.Designer.cs" t="Include" />
+        <e p="PanelDNSSearch.resx" t="Include" />
+        <e p="PanelDnsSnooping.cs" t="Include" />
+        <e p="PanelDnsSnooping.Designer.cs" t="Include" />
+        <e p="PanelDnsSnooping.resx" t="Include" />
+        <e p="PanelInformation.cs" t="Include" />
+        <e p="PanelInformation.Designer.cs" t="Include" />
+        <e p="PanelInformation.resx" t="Include" />
+        <e p="PanelInformationOptions.cs" t="Include" />
+        <e p="PanelInformationOptions.Designer.cs" t="Include" />
+        <e p="PanelInformationOptions.resx" t="Include" />
+        <e p="PanelLogs.cs" t="Include" />
+        <e p="PanelLogs.Designer.cs" t="Include" />
+        <e p="PanelLogs.resx" t="Include" />
+        <e p="PanelMetadataSearch.cs" t="Include" />
+        <e p="PanelMetadataSearch.Designer.cs" t="Include" />
+        <e p="PanelMetadataSearch.resx" t="Include" />
+        <e p="PanelProject.cs" t="Include" />
+        <e p="PanelProject.Designer.cs" t="Include" />
+        <e p="PanelProject.resx" t="Include" />
+        <e p="PanelTasks.cs" t="Include" />
+        <e p="PanelTasks.Designer.cs" t="Include" />
+        <e p="PanelTasks.resx" t="Include" />
+        <e p="PanelUrlsList.cs" t="Include" />
+        <e p="PanelUrlsList.Designer.cs" t="Include" />
+        <e p="PanelUrlsList.resx" t="Include" />
+        <e p="Plugins" t="Include">
+          <e p="ManagePluginCalls.cs" t="Include" />
+          <e p="Plugin.cs" t="Include" />
+          <e p="PluginList.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="ProjectManager.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="app.manifest" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+        </e>
+        <e p="resources" t="Include">
+          <e p="arrowDown.png" t="Include" />
+          <e p="arrowUp.png" t="Include" />
+          <e p="clipboard_text.png" t="Include" />
+          <e p="computer.png" t="Include" />
+          <e p="copytToClipboard.png" t="Include" />
+          <e p="copytToClipboard1.png" t="Include" />
+          <e p="donate.png" t="Include" />
+          <e p="drive_network_magnifier.png" t="Include" />
+          <e p="eye.png" t="Include" />
+          <e p="fingerprint.png" t="Include" />
+          <e p="foca.png" t="Include" />
+          <e p="focaBandera.png" t="Include" />
+          <e p="focasingle.png" t="Include" />
+          <e p="folder.png" t="Include" />
+          <e p="http.png" t="Include" />
+          <e p="link.png" t="Include" />
+          <e p="loading-spiral.gif" t="Include" />
+          <e p="logocontexto_negro.png" t="Include" />
+          <e p="market.png" t="Include" />
+          <e p="metashield_en.png" t="Include" />
+          <e p="metashield_es.png" t="Include" />
+          <e p="Money.gif" t="Include" />
+          <e p="NewFoca" t="Include">
+            <e p="Arbol lateral" t="Include">
+              <e p="Clients.png" t="Include" />
+              <e p="documents.png" t="Include" />
+              <e p="domains.png" t="Include" />
+              <e p="Emails.png" t="Include" />
+              <e p="Folders.png" t="Include" />
+              <e p="html.png" t="Include" />
+              <e p="MetadaSummary.png" t="Include" />
+              <e p="metadata.png" t="Include" />
+              <e p="network.png" t="Include" />
+              <e p="no_project.png" t="Include" />
+              <e p="Passwords.png" t="Include" />
+              <e p="pdf.png" t="Include" />
+              <e p="Printers.png" t="Include" />
+              <e p="Servers.png" t="Include" />
+              <e p="Software.png" t="Include" />
+              <e p="Unknown.png" t="Include" />
+              <e p="UnlocatedServers.png" t="Include" />
+              <e p="Users.png" t="Include" />
+              <e p="Users01.png" t="Include" />
+              <e p="Users02.png" t="Include" />
+            </e>
+            <e p="botones" t="Include">
+              <e p="BingCrawling.png" t="Include" />
+              <e p="Browse.png" t="Include" />
+              <e p="calendar.png" t="Include" />
+              <e p="Cancel.png" t="Include" />
+              <e p="clear.png" t="Include" />
+              <e p="Close.png" t="Include" />
+              <e p="conf.png" t="Include" />
+              <e p="Config.png" t="Include" />
+              <e p="Create.png" t="Include" />
+              <e p="desactive_autoscroll.png" t="Include" />
+              <e p="DNSSnooping.png" t="Include" />
+              <e p="DuckduckgoCrawling.png" t="Include" />
+              <e p="Export.png" t="Include" />
+              <e p="GoogleCrawling.png" t="Include" />
+              <e p="Import.png" t="Include" />
+              <e p="LoadUnloadPlugins.png" t="Include" />
+              <e p="Minimize.png" t="Include" />
+              <e p="save.png" t="Include" />
+              <e p="Search.png" t="Include" />
+              <e p="Searchall.png" t="Include" />
+              <e p="SearchFolder.png" t="Include" />
+              <e p="Skip.png" t="Include" />
+              <e p="Start.png" t="Include" />
+            </e>
+            <e p="contextual" t="Include">
+              <e p="add.png" t="Include" />
+              <e p="addFile.png" t="Include" />
+              <e p="addFolder.png" t="Include" />
+              <e p="addUrlsFromFile.png" t="Include" />
+              <e p="analyzeMetadata.png" t="Include" />
+              <e p="copytToClipboard.png" t="Include" />
+              <e p="delete.png" t="Include" />
+              <e p="deleteAll.png" t="Include" />
+              <e p="DNSSnooping.png" t="Include" />
+              <e p="download.png" t="Include" />
+              <e p="downloadAll.png" t="Include" />
+              <e p="exportDataToFile.png" t="Include" />
+              <e p="exportDomain.png" t="Include" />
+              <e p="extractMetadata.png" t="Include" />
+              <e p="importSubdomains.png" t="Include" />
+              <e p="link.png" t="Include" />
+              <e p="LoadUnloadPlugins.png" t="Include" />
+              <e p="openUrl.png" t="Include" />
+              <e p="remove.png" t="Include" />
+              <e p="searchSubdomains.png" t="Include" />
+            </e>
+            <e p="foca_logo.png" t="Include" />
+            <e p="Menu principal" t="Include">
+              <e p="about.png" t="Include" />
+              <e p="Close.png" t="Include" />
+              <e p="market.png" t="Include" />
+              <e p="NewProject.png" t="Include" />
+              <e p="options.png" t="Include" />
+              <e p="plugins.png" t="Include" />
+              <e p="project.png" t="Include" />
+              <e p="SaveProject.png" t="Include" />
+              <e p="tasklist.png" t="Include" />
+            </e>
+            <e p="options" t="Include">
+              <e p="DNS Search.png" t="Include" />
+              <e p="DNScacheSnooping.png" t="Include" />
+              <e p="GeneralConfig.png" t="Include" />
+              <e p="metadata.png" t="Include" />
+            </e>
+            <e p="pantalla-bienvenida.jpg" t="Include" />
+          </e>
+          <e p="panel.png" t="Include" />
+          <e p="plugin.png" t="Include" />
+          <e p="report_magnify.png" t="Include" />
+          <e p="scan.gif" t="Include" />
+          <e p="Scheduled tasks.png" t="Include" />
+          <e p="Skip.png" t="Include" />
+          <e p="smtp.png" t="Include" />
+          <e p="tech.png" t="Include" />
+          <e p="tools.png" t="Include" />
+          <e p="up_down_icon.gif" t="Include" />
+        </e>
+        <e p="Searcher" t="Include">
+          <e p="HTTPSizeDaemon.cs" t="Include" />
+        </e>
+        <e p="SubdomainSearcher" t="Include">
+          <e p="DNSUtilities.cs" t="Include" />
+        </e>
+        <e p="TaskManager" t="Include">
+          <e p="Tasker.cs" t="Include" />
+        </e>
+        <e p="Utilities" t="Include">
+          <e p="Functions.cs" t="Include" />
+          <e p="Log.cs" t="Include" />
+          <e p="NetRange.cs" t="Include" />
+          <e p="OperatingSystem.cs" t="Include" />
+        </e>
+        <e p="Win7Integration" t="Include">
+          <e p="CoreErrorHelper.cs" t="Include" />
+          <e p="CoreHelpers.cs" t="Include" />
+          <e p="TaskbarCOMInterfaces.cs" t="Include" />
+          <e p="TaskbarEnums.cs" t="Include" />
+          <e p="TaskbarManager.cs" t="Include" />
+        </e>
+      </e>
+      <e p="FOCA3_Pro.sln" t="IncludeFlat" />
+      <e p="lib" t="Include">
+        <e p="Ionic.Zip.dll" t="Include" />
+        <e p="PdfSharp.dll" t="Include" />
+      </e>
+      <e p="MetadataExtractCore" t="IncludeRecursive">
+        <e p="Analysis" t="Include">
+          <e p="ApplicationAnalysis.cs" t="Include" />
+          <e p="PathAnalysis.cs" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Diagrams" t="Include">
+          <e p="Application.cs" t="Include" />
+          <e p="Dates.cs" t="Include" />
+          <e p="Email.cs" t="Include" />
+          <e p="FileMetadata.cs" t="Include" />
+          <e p="GeoLocation.cs" t="Include" />
+          <e p="History.cs" t="Include" />
+          <e p="MetadataValue.cs" t="Include" />
+          <e p="OldVersion.cs" t="Include" />
+          <e p="Password.cs" t="Include" />
+          <e p="Path.cs" t="Include" />
+          <e p="Printer.cs" t="Include" />
+          <e p="Server.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="Metadata" t="Include">
+          <e p="DocumentExtractor.cs" t="Include" />
+          <e p="EXIFDocument.cs" t="Include" />
+          <e p="ICADocument.cs" t="Include" />
+          <e p="InDDDocument.cs" t="Include" />
+          <e p="Office972003.cs" t="Include" />
+          <e p="OfficeOpenXML.cs" t="Include" />
+          <e p="OleDocument.cs" t="Include" />
+          <e p="OpenOfficeDocument.cs" t="Include" />
+          <e p="PDFDocument.cs" t="Include" />
+          <e p="RDPDocument.cs" t="Include" />
+          <e p="SVGDocument.cs" t="Include" />
+          <e p="WPDDocument.cs" t="Include" />
+          <e p="XMPExtractor.cs" t="Include" />
+        </e>
+        <e p="MetadataExtractCore.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="resources" t="Include">
+          <e p="CanonMarkernote.txt" t="Include" />
+          <e p="CasioMarkernote.txt" t="Include" />
+          <e p="Commons.txt" t="Include" />
+          <e p="ExifInteropMarkernote.txt" t="Include" />
+          <e p="ExifMarkernote.txt" t="Include" />
+          <e p="FujiFilmMarkernote.txt" t="Include" />
+          <e p="GpsMarkernote.txt" t="Include" />
+          <e p="IptcMarkernote.txt" t="Include" />
+          <e p="JpegMarkernote.txt" t="Include" />
+          <e p="KodakMarkernote.txt" t="Include" />
+          <e p="KyoceraMarkernote.txt" t="Include" />
+          <e p="NikonTypeMarkernote.txt" t="Include" />
+          <e p="OlympusMarkernote.txt" t="Include" />
+          <e p="PanasonicMarkernote.txt" t="Include" />
+          <e p="PentaxMarkernote.txt" t="Include" />
+          <e p="SonyMarkernote.txt" t="Include" />
+        </e>
+        <e p="Utilities" t="Include">
+          <e p="Functions.cs" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SearcherCore/SearcherCore" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Searcher" t="Include">
+          <e p="BingAPI" t="Include">
+            <e p="SearchBingApi.cs" t="Include" />
+          </e>
+          <e p="BingAPISearcher.cs" t="Include" />
+          <e p="BingWebSearcher.cs" t="Include" />
+          <e p="DuckduckgoWebSearcher.cs" t="Include" />
+          <e p="GoogleAPI" t="Include">
+            <e p="SearchGoogleApi.cs" t="Include" />
+          </e>
+          <e p="GoogleAPISearcher.cs" t="Include" />
+          <e p="GoogleWebSearcher.cs" t="Include" />
+          <e p="LinkSearcher.cs" t="Include" />
+          <e p="Searcher.cs" t="Include" />
+          <e p="Shodan" t="Include">
+            <e p="ShodanResponse.cs" t="Include" />
+          </e>
+          <e p="ShodanSearcher.cs" t="Include" />
+          <e p="Threads" t="Include">
+            <e p="EventsThreads.cs" t="Include" />
+          </e>
+        </e>
+        <e p="SearcherCore.csproj" t="IncludeRecursive" />
+        <e p="Web References" t="Include">
+          <e p="net.bing.api" t="Include">
+            <e p="Reference.cs" t="Include" />
+            <e p="Reference.map" t="Include" />
+            <e p="search.wsdl" t="Include" />
+            <e p="SearchResponse.datasource" t="Include" />
+          </e>
+        </e>
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_FOCA3_Pro.863426259.00" t="ExcludeRecursive" />
+  </component>
+</project>
