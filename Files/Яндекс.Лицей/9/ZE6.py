@@ -1,9 +1,9 @@
-locate = 0
+locate = 1
 locate1 = 0
 xm1 = 0
 xm2 = 0
 key = 0
-print("Вы находитесь перед входом в лабиринт, куда пойдете ?")
+print("Вы находитесь в начале лабиринта")
 print("В лабиринт")
 print("Домой")
 answer = input()
@@ -13,16 +13,18 @@ while locate != 12:
     elif answer == "Домой":
         locate = -1
     else:
+        locate1 = 1
+    if locate1 == 1:
+        locate = locate + 1
+        print("ошибка")
+        answer = input()
         locate1 = 0
+        continue
     if locate == -1:
         print("Эммм... Вы вернулись домой.")
         print("Конец")
         break
-    elif locate1 == 0:
-        locate = locate
-        print("ошибка")
-        answer = input()
-        continue
+
     elif locate == 1:
         print("Вы находитесь на развилке:")
         print("Пойти прямо (Впереди еще одна развилка)")
@@ -31,12 +33,13 @@ while locate != 12:
         answer = input()
         if answer == "Пойти прямо":
             locate = 8
+            continue
         elif answer == "Пойти налево":
             locate = 2
         elif answer == "Пойти направо":
             locate = 3
         else:
-            locate1 = 0
+            locate1 = 1
     elif locate == 2:
         print("Вы спустились в подвал и вас там закрыли")
         print("Конец")
