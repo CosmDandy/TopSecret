@@ -2,7 +2,7 @@ s = int(input())
 z = 1
 answer = ""
 y = 0
-for i in range(4 * s):
+while s != 0:
     a = input()
     if z == 1:
         answer = "раз"
@@ -12,14 +12,18 @@ for i in range(4 * s):
         answer = "три"
     elif z == 4:
         answer = "четыре"
-    if z <= 4:
+    if z < 4:
         if a == answer:
             y += 1
+            z += 1
         else:
-            print("Правильных отсчётов было", (y + 1), ", но теперь вы ошиблись.")
+            print("Правильных отсчётов было", str(y) + ",",
+                  "но теперь вы ошиблись.")
             y = 0
             z = 1
-        z += 1
+            s -= 1
     else:
+        y += 1
         z = 1
         continue
+print("На сегодня хватит.")

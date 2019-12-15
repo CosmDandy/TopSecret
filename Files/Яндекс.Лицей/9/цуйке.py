@@ -1,93 +1,93 @@
-st1 = int(input("Сколько камней в 1 куче? "))
-st2 = int(input("Сколько камней во 2 куче? "))
-st3 = int(input("Сколько камней в 3 куче? "))
-nim = st1 ^ st2 ^ st3
+x1 = int(input(""))
+x2 = int(input(""))
+x3 = int(input(""))
+nim = x1 ^ x2 ^ x3
 print(nim)
 if nim > 0:
-    if st1 ^ nim < st1:
-        dif = st1 - (st1 ^ nim)
-        st1 -= dif
-        get = st1
+    if x1 ^ nim < x1:
+        dif = x1 - (x1 ^ nim)
+        x1 -= dif
+        get = x1
         num = 1
-    elif st2 ^ nim < st2:
-        dif = st2 - (st2 ^ nim)
-        st2 -= dif
-        get = st2
+    elif x2 ^ nim < x2:
+        dif = x2 - (x2 ^ nim)
+        x2 -= dif
+        get = x2
         num = 2
     else:
-        dif = st3 - (st3 ^ nim)
-        st3 -= dif
-        get = st3
+        dif = x3 - (x3 ^ nim)
+        x3 -= dif
+        get = x3
         num = 3
 else:
-    st1 -= 1
+    x1 -= 1
     dif = 1
     num = 1
-    get = st1
+    get = x1
 print("Я забрал " + str(dif) + " камней из " + str(
     num) + " кучи, теперь там " + str(get) + " камней. Твой ход")
-while st1 + st2 + st3 > 0:
+while x1 + x2 + x3 > 0:
     step = 2
     num = 0
     while num < 1 or num > 3:
         num = int(input("Из какой кучи? "))
-        if num == 1 and st1 == 0 or num == 2 and st2 == 0 or num == 3 and st3 == 0:
+        if num == 1 and x1 == 0 or num == 2 and x2 == 0 or num == 3 and x3 == 0:
             print("Здесь уже нет камней!")
             num = 0
     con = True
     while con:
         if num == 1:
-            get = st1
+            get = x1
         elif num == 2:
-            get = st2
+            get = x2
         else:
-            get = st3
+            get = x3
         dif = int(input("Сколько (но не больше " + str(get) + ")?"))
         if dif > 0 and dif <= get:
             if num == 1:
-                st1 -= dif
-                get = st1
+                x1 -= dif
+                get = x1
             elif num == 2:
-                st2 -= dif
-                get = st2
+                x2 -= dif
+                get = x2
             else:
-                st3 -= dif
-                get = st3
+                x3 -= dif
+                get = x3
             print("Ты забрал " + str(dif) + " камней из " + str(
                 num) + " кучи, теперь там " + str(get) + " камней. Мой ход")
             con = False
-    if st1 + st2 + st3 > 0:
+    if x1 + x2 + x3 > 0:
         step = 1
-        nim = st1 ^ st2 ^ st3
+        nim = x1 ^ x2 ^ x3
         if nim > 0:
-            if st1 ^ nim < st1:
-                dif = st1 - (st1 ^ nim)
-                st1 -= dif
-                get = st1
+            if x1 ^ nim < x1:
+                dif = x1 - (x1 ^ nim)
+                x1 -= dif
+                get = x1
                 num = 1
-            elif st2 ^ nim < st2:
-                dif = st2 - (st2 ^ nim)
-                st2 -= dif
-                get = st2
+            elif x2 ^ nim < x2:
+                dif = x2 - (x2 ^ nim)
+                x2 -= dif
+                get = x2
                 num = 2
             else:
-                dif = st3 - (st3 ^ nim)
-                st3 -= dif
-                get = st3
+                dif = x3 - (x3 ^ nim)
+                x3 -= dif
+                get = x3
                 num = 3
         else:
-            if st1 > 0:
-                st1 -= 1
+            if x1 > 0:
+                x1 -= 1
                 num = 1
-                get = st1
-            elif st2 > 0:
-                st2 -= 1
+                get = x1
+            elif x2 > 0:
+                x2 -= 1
                 num = 2
-                get = st2
+                get = x2
             else:
-                st3 -= 1
+                x3 -= 1
                 num = 3
-                get = st3
+                get = x3
             dif = 1
         print("Я забрал " + str(dif) + " камней из " + str(
             num) + " кучи, теперь там " + str(get) + " камней. Твой ход")
