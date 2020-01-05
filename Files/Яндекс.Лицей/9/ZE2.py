@@ -4,22 +4,19 @@ print("Ход ИИ:")
 if x1 > x2:
     xr = x1 - x2
     x1 -= xr
-    print(1)
-    print(xr)
+    print("Я взял из первой кучи", xr)
 elif x2 > x1:
     xr = x2 - x1
     x2 -= xr
-    print(2)
-    print(xr)
+    print("Я взял из второй кучи", xr)
 else:
     x1 -= 1
-    print(1)
-    print(1)
+    print("Я взял из первой кучи 1")
 print(x1, x2)
 while (x1 + x2) > 0:
     print("Ваш ход:")
-    y = int(input())
-    c = int(input())
+    y = int(input("Куча "))
+    c = int(input("Кол-во камней "))
     if 0 < y <= 2:
         if c > 0:
             if c <= x1 or c <= x2:
@@ -31,12 +28,10 @@ while (x1 + x2) > 0:
                 print("Ход ИИ:")
                 if y == 1:
                     x2 -= c
-                    print(1)
-                    print(c)
+                    print("Я взял из первой кучи", c)
                 elif y == 2:
                     x1 -= c
-                    print(2)
-                    print(c)
+                    print("Я взял из второй кучи", c)
                 print(x1, x2)
             else:
                 print("Неправильный ввод")
