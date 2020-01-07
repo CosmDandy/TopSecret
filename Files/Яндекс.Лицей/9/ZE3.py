@@ -54,7 +54,7 @@ while x1 + x2 + x3 > 0:
             else:
                 x3 -= s
                 ng = x3
-            print("ИИ забрал:", str(s))
+            print("Игрок забрал:", str(s))
             print("Из кучи:", str(xn))
             print("В этой куче осталось:", str(ng), "камня(ей).")
             con = False
