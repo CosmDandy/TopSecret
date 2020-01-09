@@ -1,28 +1,62 @@
-x = int(input())
-g = 1
-xs = 0
-if x == 0:
-    print("В куче нет камней")
-else:
-    while x > 0:
-        xs = x % 4
-        if xs == 0:
-            xs = 3
-        elif xs == 1:
-            xs = 1
-        else:
-            xs -= 1
-        print("ИИ взял", xs)
-        x -= xs
-        print("Осталось камней:", x)
-        if x == 0:
-            print("Победил ИИ")
-        else:
-            xs = 0
-            g = 0
-            while g > 3 or g < 1 or g > x:
-                print("Вы  берете:")
-                g = int(input())
-            x -= g
-            print("Осталось камней:", x)
-i
+a = int(input())
+if a <= 0:
+    while a <= 0:
+        a = int(input())
+if a > 0:
+    while a >= 0:
+        if a >= 4:
+            b = a // 4
+            c = a - b * 4
+            if c > 0:
+                print("Взято:", c)
+                a -= c
+                print("Осталось:", a)
+                b = int(input())
+                if b <= 3 and b > 0:
+                    a -= b
+                    print("Осталось:", a)
+                else:
+                    while b > 3 or b < 1:
+                        print("Осталось:", a,
+                              "Вы взяли некорректное число камней")
+                        b = int(input())
+                    if (b <= 3) and (b > 0):
+                        print("Взято:", b)
+                        a -= b
+                        print("Осталось:", a)
+            elif c == 0:
+                print("Взято:", 1)
+                a -= 1
+                print("Осталось:", a)
+                b = int(input())
+                if b <= 3 and b > 0:
+                    a -= b
+                    print("Осталось:", a)
+                else:
+                    while b > 3 or b < 1:
+                        print("Осталось:", a,
+                              "Вы взяли некорректное число камней")
+                        b = int(input())
+                    if (b <= 3) and (b > 0):
+                        print("Взято:", b)
+                        a -= b
+                        print("Осталось:", a)
+        elif a < 4:
+            if a == 3:
+                print("Взято:", 3)
+                print("Осталось: 0")
+                print("Победил ИИ")
+                a = -1
+            elif a == 2:
+                print("Взято:", 2)
+                print("Осталось: 0")
+                print("Победил ИИ")
+                a = -1
+            elif a == 1:
+                print("Взято:", 1)
+                print("Осталось: 0")
+                print("Победил ИИ")
+                a = -1
+            elif a == 0:
+                print("Победил Игрок")
+                a = -1
