@@ -1,49 +1,83 @@
-x1 = int(input())
-x2 = int(input())
-print("Ход ИИ:")
-if x1 > x2:
-    xr = x1 - x2
-    x1 -= xr
-    print(1)
-    print(xr)
-elif x2 > x1:
-    xr = x2 - x1
-    x2 -= xr
-    print(2)
-    print(xr)
+x1 = int(input(""))
+x2 = int(input(""))
+step = 1
+n = x1 ^ x2
+if x1 == 0 and x2 == 0:
+    print("Нет камней")
 else:
-    x1 -= 1
-    print(1)
-    print(1)
-print(x1, x2)
-while (x1 + x2) > 0:
-    print("Ваш ход:")
-    y = int(input())
-    c = int(input())
-    if 0 < y <= 2:
-        if c > 0:
-            if c <= x1 or c <= x2:
-                if y == 1:
-                    x1 -= c
-                elif y == 2:
-                    x2 -= c
-                print(x1, x2)
-                print("Ход ИИ:")
-                if y == 1:
-                    x2 -= c
-                    print(1)
-                    print(c)
-                elif y == 2:
-                    x1 -= c
-                    print(2)
-                    print(c)
-                print(x1, x2)
-            else:
-                print("Неправильный ввод")
-                continue
+    if n > 0:
+        if x1 ^ n < x1:
+            s = x1 - (x1 ^ n)
+            x1 -= s
+            ng = x1
+            xn = 1
         else:
-            print("Неправильный ввод")
-            continue
+            s = x2 - (x2 ^ n)
+            x2 -= s
+            ng = x2
+            xn = 2
     else:
-        print("Неправильный ввод")
-        continue
+        x1 -= 1
+        s = 1
+        xn = 1
+        ng = x1
+    print("ИИ забрал:", str(s))
+    print("Из кучи:", str(xn))
+    print("В этой куче осталось:", str(ng), "камня(ей).")
+    while x1 + x2 > 0:
+        step = 2
+        xn = 0
+        while xn < 1 or xn > 2:
+            xn = int(input("Из какой кучи взять? "))
+            if xn == 1 and x1 == 0 or xn == 2 and x2 == 0:
+                print("В этой куче нет камней")
+                xn = 0
+        con = True
+        while con:
+            if xn == 1:
+                ng = x1
+            else:
+                ng = x2
+            s = int(input("Сколько взять(Не больше" + str(ng) + ")?"))
+            if s > 0 and s <= ng:
+                if xn == 1:
+                    x1 -= s
+                    ng = x1
+                else:
+                    x2 -= s
+                    ng = x2
+                print("Игрок забрал:", str(s))
+                print("Из кучи:", str(xn))
+                print("В этой куче осталось:", str(ng), "камня(ей).")
+                con = False
+        if x1 + x2 > 0:
+            step = 1
+            n = x1 ^ x2
+            if n > 0:
+                if x1 ^ n < x1:
+                    s = x1 - (x1 ^ n)
+                    x1 -= s
+                    ng = x1
+                    xn = 1
+                else:
+                    s = x2 - (x2 ^ n)
+                    x2 -= s
+                    ng = x2
+                    xn = 2
+            else:
+                if x1 > 0:
+                    x1 -= 1
+                    xn = 1
+                    ng = x1
+                else:
+                    x2 -= 1
+                    xn = 2
+                    ng = x2
+                s = 1
+            print("ИИ забрал:", str(s))
+            print("Из кучи:", str(xn))
+            print("В этой куче осталось:", str(ng), "камня(ей).")
+    if step == 1:
+        print("Победил ИИ")
+    else:
+        print("Победил Игрок")

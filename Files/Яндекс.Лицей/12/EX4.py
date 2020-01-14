@@ -1,16 +1,20 @@
 n = int(input())
-xm = 10 ** 6
+x_min = 10 ** 6
 x = 0
+xm = 0
 ts = 0
-for i in range(n):
+max = 0
+for i in range(1, n + 1):
     t = int(input())
     for j in range(t):
         ts = int(input())
-        if ts < xm:
-            x = n
-            xm = ts
+        if ts < x_min:
+            x = i
+            x_min = ts
         else:
             continue
-    if ts < t:
-        xm =
-print(x, xm)
+    if x_min > max:
+        xm = i
+        max = x_min
+    x_min = 10 ** 6
+print(xm, max)
