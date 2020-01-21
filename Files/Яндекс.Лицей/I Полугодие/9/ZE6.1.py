@@ -8,7 +8,6 @@ print("В лабиринт")
 print("Домой")
 answer = input()
 while locate != 12:
-    while
     if answer == "В лабиринт":
         locate = 1
     elif answer == "Домой":
