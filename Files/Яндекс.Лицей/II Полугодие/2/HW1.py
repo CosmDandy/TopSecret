@@ -1,17 +1,13 @@
-an = None
-bn = None
-a = None
-b = None
-while an2 == bn1:
-
-    a = input()
-    an = a[0]
-
-    an = a[len(a) - 1]
-    b = input()
-    bn = b[0]
-    bn = b[len(b) - 1]
-if an2 == bn1:
-    print(a)
-else:
-    print(b)
+x = input()
+key = 1
+end = x[-1]
+start = end
+while key != 0:
+    x = input()
+    start = x[0]
+    if start == end:
+        end = x[-1]
+        continue
+    else:
+        key = 0
+        print(x)
