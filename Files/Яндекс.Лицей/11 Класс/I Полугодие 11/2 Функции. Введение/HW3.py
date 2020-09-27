@@ -1,0 +1,1 @@
+def equation(a, b):
