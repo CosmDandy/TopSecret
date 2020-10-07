@@ -1,10 +1,10 @@
-def print_average(arr):
+def average(arr):
     s = 0
     n = 0
     for i in range(len(list(arr))):
         s += arr[i]
         n += 1
-    if not list(arr):
-        print(0)
+    if len(list(arr)) == 0:
+        return 0
     else:
-        print(s / n)
+        return s / n
