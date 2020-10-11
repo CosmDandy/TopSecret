@@ -1,10 +1,8 @@
 def who_are_you_and_hello():
-    name = input()
-    while name != name.title():
-        for i in range(len(name)):
-            if "1234567890" in name:
-                continue
+    flag = True
+    name = None
+    while flag:
         name = input()
-
-
-who_are_you_and_hello()
+        if name == name.capitalize() and name.isalpha():
+            flag = False
+            print("Привет, " + name + "!")
