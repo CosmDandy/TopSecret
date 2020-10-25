@@ -1,4 +1,3 @@
-my_set = {'a', 'b', 'b', 'c'}
-print('до удаления:', my_set)
-my_set.remove("b")
-print('после удаления:', my_set)
+a = [2, 3, 3, 7]
+a.remove(3)
+print(a)
