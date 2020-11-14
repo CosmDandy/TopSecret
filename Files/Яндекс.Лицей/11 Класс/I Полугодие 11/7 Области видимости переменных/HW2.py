@@ -1,7 +1,13 @@
 def translate(text):
-    x = list()
-    for i in range(len(text)):
-        for j in range(len(text[i])):
-            if text[i][j] not in 'ауоыиэяюёеАУОЫИЭЯЮЁЕ,:;'
-            a = (" ".join(text[i]) if text[i][j] not in 'ауоыиэяюёеАУОЫИЭЯЮЁЕ,:;').split(" ")
-            x.append(text[i])
+    x = list(s for s in text if s not in 'ауоыиэяюёеАУОЫИЭЯЮЁЕ,.:;-')
+    a = []
+    for i in range(1, len(x)):
+        if (x[i - 1] != " ") != (x[i] != " "):
+            a.append(x[i - 1])
+    print("".join(a))
+
+
+
+translate(
+    "Удивительный факт, но текст на языке НЕРАЗБОРЧИВО оказывается довольно просто читать. "
+    "Достаточно небольшой тренировки - и вы сможете это делать.")

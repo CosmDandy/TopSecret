@@ -8,3 +8,4 @@ def polite_input(question):
         name = str(input())
     print(str(name) + ",", question)
     answer = input()
+    return answer
