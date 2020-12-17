@@ -6,8 +6,3 @@ def continue_fibonacci_sequence(sequence, n):
         # следовательно она не меняется. += позволяет нам обойти эту проблему без использования
         # global
         sequence += [next_element]
-
-
-sequence = [1, 1]
-continue_fibonacci_sequence(sequence, 1)
-print(*sequence)

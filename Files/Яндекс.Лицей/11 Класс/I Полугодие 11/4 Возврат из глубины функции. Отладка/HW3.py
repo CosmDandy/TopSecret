@@ -4,3 +4,6 @@ def create_polygon_number(n, q):
 
 def check_polygon_number(number):
     print()
+
+
+print(create_polygon_number(5, 8))

@@ -1,0 +1,5 @@
+a = int(input(), 2)
+b = int(input(), 2)
+print("A or B:", bin(a | b)[2::])
+print("A and B:", bin(a & b)[2::])
+print("A xor B:", bin(a ^ b)[2::])
