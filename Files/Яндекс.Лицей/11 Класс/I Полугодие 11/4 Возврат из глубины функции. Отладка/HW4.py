@@ -1,15 +1,10 @@
-shops = {'Шестёрочка': {'Консервы': ['Ананасы кусочками', 'Ананасы колечками'],
-                        'Сухофрукты': ['Тропические ананасы', 'Дуриан вяленый'],
-                        'Фрукты': ['Бананы', 'Манго']},
-         'Микси': {'Овощи-фрукты': ['Яблоки', 'Груши', 'Личи']}}
-
-
 def search_fruit(shops, fruit):
-    for shop, deps in shops.items():
-        for dep, items in deps.items():
-            if fruit in items:
-                return shop, dep
-    return None, None
-
-
-print(*search_fruit(shops, 'Дуриан'))
+    n = False
+    for i in shops:
+        for j in shops[i]:
+            for k in shops[i][j]:
+                if fruit in k:
+                    n = True
+                    return i, j
+    if not n:
+        return None, None
