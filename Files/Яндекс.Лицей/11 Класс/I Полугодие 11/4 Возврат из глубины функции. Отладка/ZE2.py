@@ -1,18 +1,22 @@
 def password_level(password):
-    if 6 <= len(password):
-        if not password.isdigit() and (password.isalpha() and password != password.lower()):
-            if password != password.lower() or (password == password.lower() and not password.isalpha()):
-                if password.isalnum() and password != password.lower():
-                    return "Надежный пароль"
-            else:
-                return "Слабый пароль"
-        else:
-            return "Ненадежный пароль"
+    x1 = x2 = x3 = False
+    if len(password) < 6:
+        s = "Недопустимый пароль"
+        return s
+    elif password.isdigit():
+        s = "Ненадежный пароль"
+        return s
+    for i in password:
+        if i.isupper():
+            x1 = True
+        elif i.islower():
+            x2 = True
+        elif i in "0123456789":
+            x3 = True
+    if x1 * x2 * x3:
+        s = "Надежный пароль"
+    elif x1 ^ x2 and not x3:
+        s = "Ненадежный пароль"
     else:
-        return "Недопустимый пароль"
-
-
-print(password_level("qwe"))
-print(password_level("qwerty"))
-print(password_level("123Qwerty"))
-print(password_level("Qwerty"))
+        s = "Слабый пароль"
+    return s
