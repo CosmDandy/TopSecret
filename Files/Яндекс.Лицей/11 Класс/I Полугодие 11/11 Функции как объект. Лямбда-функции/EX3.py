@@ -1,5 +1,5 @@
 def simple_map(transformation, values):
-    res = []
+    x = []
     for i in values:
-        res.append(transformation(i))
-    return res
+        x.append(transformation(i))
+    return x
